@@ -1,0 +1,215 @@
+FinalScoreColor = 
+SWITCH(
+    TRUE(),
+    
+    // Reach - Global Audience
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Global Audience" && 
+    [Final Score] >= 1 && [Final Score] <= 6, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Global Audience" && 
+    [Final Score] >= 7 && [Final Score] <= 12, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Global Audience" && 
+    [Final Score] >= 13 && [Final Score] <= 15, "#71B64B",
+
+    // Incrementality
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Incrementality" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Incrementality" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Incrementality" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Key Markets
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Key markets" && 
+    [Final Score] >= 1 && [Final Score] <= 4, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Key markets" && 
+    [Final Score] >= 5 && [Final Score] <= 8, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Key markets" && 
+    [Final Score] >= 9 && [Final Score] <= 10, "#71B64B",
+
+    // Social Following
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Social Following" && 
+    [Final Score] >= 1 && [Final Score] <= 4, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Social Following" && 
+    [Final Score] >= 5 && [Final Score] <= 8, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Reach" && 
+    SELECTEDVALUE(Input[Metric]) = "Social Following" && 
+    [Final Score] >= 9 && [Final Score] <= 10, "#71B64B",
+
+    // Relevance - Brand Fit
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Brand Fit" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Brand Fit" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Brand Fit" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Relevance - Category Fit
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Category Fit" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Category Fit" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Category Fit" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Relevance - Consumer Fit
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Consumer Fit" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Consumer Fit" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Consumer Fit" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Relevance - Strategy Fit
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Strategy Fit" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Strategy Fit" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Relevance" && 
+    SELECTEDVALUE(Input[Metric]) = "Strategy Fit" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Return - Activation Affordability
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Activation Affordability" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Activation Affordability" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Activation Affordability" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Return - Activation Potential
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Activation Potential" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Activation Potential" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Activation Potential" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Return - Equity
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Equity" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Equity" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Equity" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Return - Media Value
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Media Value" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Media Value" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Return" && 
+    SELECTEDVALUE(Input[Metric]) = "Media Value" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Rights - Uniqueness
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Uniqueness" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Uniqueness" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Uniqueness" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Rights - Distinctiveness
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Distinctiveness" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Distinctiveness" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Distinctiveness" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Rights - Frequency of Exposure
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Frequency of Exposure" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Frequency of Exposure" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Frequency of Exposure" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Rights - Assets
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Assets" && 
+    [Final Score] >= 1 && [Final Score] <= 2, "#FF0000",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Assets" && 
+    [Final Score] >= 3 && [Final Score] <= 4, "#FF8928",
+    
+    SELECTEDVALUE(Input[Dimensions]) = "Rights" && 
+    SELECTEDVALUE(Input[Metric]) = "Assets" && 
+    [Final Score] = 5, "#71B64B",
+
+    // Default Color
+    "Transparent"
+)
